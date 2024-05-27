@@ -1,0 +1,56 @@
+<!-- Index.html file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="mstyle.css">
+	<title>QR Code Scanner / Reader
+	</title>
+</head>
+
+<body>
+
+<body1>
+	<div></div>
+	<div class="scanner">
+		<div class="container">
+			<h1>Scan QR Codes</h1>
+			<div class="section">
+				<div id="my-qr-reader">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form action="/add-marks" method="post">
+		<h1 class="color">Add Students Marks</h1><br>
+        <label class="color" for="secret">Scanned-code:</label><br>
+        <input type="secret" id="secret" name="secret" required><br><br>
+        <label class="color" for="marks">Students marks:</label><br>
+        <input type="marks" id="marks" name="marks" required><br><br>
+    <button type="submit">Submit</button>
+    </form>
+	
+	<script
+		src="https://unpkg.com/html5-qrcode">
+	</script>
+	<script src="mscript.js"></script>
+</body1>
+<div class="footer">
+	<h4 class="color">Number of papers checked by you: <%= papernumber %></h4>
+	<a style="text-decoration: none;" href="/bill">
+		<button  class="btn color">My Bill</button>
+	</a>
+
+	<a style="text-decoration: none;" href="/data">
+		<button  class="btn color">Get all Students data</button>
+	</a>
+	
+</div>
+
+</body>
+</html>
