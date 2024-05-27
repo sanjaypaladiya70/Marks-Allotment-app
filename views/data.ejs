@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB Data</title>
+
+    <style>
+        body{
+            background-color: rgba(42, 114, 230, 0.66);
+        }
+
+        ul li{
+            color: white;
+            margin: 15px;
+        }
+        h2{
+            color: white;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>All Student data</h2>
+    <ul>
+        <% allData.forEach(function(item) { %>
+            <li><%= item.name %> - <%= item.seatNo %> -   <%= item.marks %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
